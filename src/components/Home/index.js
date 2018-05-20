@@ -2,6 +2,7 @@ import { h, Component } from "preact"
 import Header from "./Header"
 import Dialog from "./Dialog"
 import { List, ListTab } from "./List"
+import dp from "./img/dp.jpeg"
 import phone from "./img/phone.png"
 import gmail from "./img/gmail.png"
 import address from "./img/address.png"
@@ -13,7 +14,10 @@ class Home extends Component {
     return (
       <div>
         <Header />
-        <Dialog text="Will love to have a chat" />
+        <Dialog>
+          <Dialog.Image>{dp}</Dialog.Image>
+          <Dialog.Text>Will love to have a chat</Dialog.Text>
+        </Dialog>
         <List>
           <ListTab>
             <ListTab.Image>{phone}</ListTab.Image>
@@ -28,17 +32,14 @@ class Home extends Component {
             <ListTab.Title>Bangalore, India</ListTab.Title>
           </ListTab>
         </List>
-        <Dialog text="I have worked on the following tech" />
+        <Dialog>
+          <Dialog.Image>{dp}</Dialog.Image>
+          <Dialog.Text>I have worked on the following tech</Dialog.Text>
+        </Dialog>
         <List>
           <ListTab>
             <ListTab.Image>{react}</ListTab.Image>
             <ListTab.Title>React.js</ListTab.Title>
-          </ListTab>
-          <ListTab>
-            <ListTab.Image>
-              https://pbs.twimg.com/profile_images/834588909203918854/FhgHcd_R_400x400.jpg
-            </ListTab.Image>
-            <ListTab.Title>Preact.js</ListTab.Title>
           </ListTab>
           <ListTab>
             <ListTab.Image>

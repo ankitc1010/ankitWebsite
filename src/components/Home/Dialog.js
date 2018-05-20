@@ -1,20 +1,23 @@
 import { h, Component } from "preact"
 import dp from "./img/dp.jpeg"
-class Dialog extends Component {
-  render() {
-    return (
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="pad-contacts">
-              <div class="flex">
-                <img src={dp} class="dp" /> <span>{this.props.text}</span>
-              </div>
-            </div>
-          </div>
+const Container = ({ children }) => (
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="pad-contacts">
+          <div class="flex">{children}</div>
         </div>
       </div>
-    )
+    </div>
+  </div>
+)
+const Image = ({ children }) => <img src={children} class="dp" />
+const Text = ({ children }) => <span>{children}</span>
+class Dialog extends Component {
+  static Image = Image
+  static Text = Text
+  render() {
+    return <Container>{this.props.children}</Container>
   }
 }
 
