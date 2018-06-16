@@ -1,5 +1,4 @@
 import { h, Component } from "preact"
-import dp from "./img/dp.jpeg"
 const Container = ({ children }) => (
   <div class="container">
     <div class="row">

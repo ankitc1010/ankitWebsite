@@ -24,6 +24,7 @@
 		"bootstrap-4-grid": "^2.4.0",
 		"compression": "^1.7.2",
 		"express": "^4.16.3",
+		"particlesjs": "^2.2.2",
 		"preact": "^8.2.7",
 		"preact-async-route": "^2.1.1",
 		"preact-router": "^2.6.0",
