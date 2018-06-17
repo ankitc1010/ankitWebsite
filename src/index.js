@@ -5,7 +5,7 @@ import Router from "preact-router"
 import AsyncRoute from "preact-async-route"
 import init from "./registerServiceWorker"
 import "preact/debug"
-import "bootstrap-4-grid/scss/grid.scss"
+// import "bootstrap-4-grid/scss/grid.scss"
 import "./style.scss"
 
 init()

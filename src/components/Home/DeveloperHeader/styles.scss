@@ -1,0 +1,83 @@
+@import "../variables";
+
+@keyframes yellowdown {
+    to {
+        transform: perspective($perspective) rotateX($rotateX) rotateY($rotateY) rotate($rotateZ) translateZ(-90px);
+    }
+}
+
+@keyframes purpledown {
+    to {transform: perspective($perspective) rotateX($rotateX) rotateY($rotateY) rotate($rotateZ) translateZ(-150px);}
+}
+@keyframes hidown {
+    to {transform: perspective($perspective) rotateX($rotateX) rotateY($rotateY) rotate($rotateZ) translateZ(-30px);}
+}
+
+.developer__header {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    // transform: rotate3d(0.5,0.5, 0.5,23deg);
+}
+
+.developer__say__hi {
+    grid-column: 2 / span 8;
+    grid-row: 3 / span 8;
+    transition: 299ms;
+    padding: 20px;
+    order: 1;
+    transform: perspective($perspective) rotateX($rotateX) rotateY($rotateY) rotate($rotateZ);
+    // background: url('https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?cs=srgb&dl=landscape-nature-sky-236047.jpg&fm=jpg');
+    background: #fde68d;
+    border-radius: 23px;
+    display: flex;
+    animation-name: hidown;
+    animation-duration: 3.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -webkit-box-shadow: 24px 11px 52px -22px rgba(0,0,0,1);
+-moz-box-shadow: 24px 11px 52px -22px rgba(0,0,0,1);
+box-shadow: 24px 11px 52px -22px rgba(0,0,0,1);
+
+}
+
+.developer__say__hi h2 {
+    margin: auto;
+}
+.maharoon {
+    color: #b30000;
+}
+.developer__block {
+    grid-column: 2 / span 8;
+    grid-row: 3 / span 8;
+    transform: perspective($perspective) rotateX($rotateX) rotateY($rotateY) rotate($rotateZ);
+    border-radius: 23px;
+
+    -webkit-box-shadow: 24px 11px 52px -22px rgba(0,0,0,1);
+-moz-box-shadow: 24px 11px 52px -22px rgba(0,0,0,1);
+box-shadow: 24px 11px 52px -22px rgba(0,0,0,1);
+
+}
+
+.yellow {
+    background: #e66845;
+    transform: perspective($perspective) rotateX($rotateX) rotateY($rotateY) rotate($rotateZ) translateZ(-10px);
+    order: -1;
+    animation-name: yellowdown;
+    animation-duration: 3.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.purple {
+    background: #6e2b32;
+    order: -2;
+    transform: perspective($perspective) rotateX($rotateX) rotateY($rotateY) rotate($rotateZ) translateZ(-20px);
+    animation-name: purpledown;
+    animation-duration: 3.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
