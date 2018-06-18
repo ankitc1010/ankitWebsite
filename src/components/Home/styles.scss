@@ -16,6 +16,21 @@
     min-width: 150px;
 }
 
+.footer {
+    font-size: 14px;
+    margin-top: 45px;
+    padding: 23px;
+    background: burlywood;
+    color: white;
+    text-align: center;
+    border-radius: 23px;
+}
+
+.footer img {
+    width: 49px;
+    border-radius: 23px;
+}
+
 .pad-contacts {
     padding: 31px 0px 0px 0px;
     font-size:80%;
@@ -94,10 +109,4 @@
     }
     }
 }
-.particlesjs {
-    position: absolute;
-    width:100vw;
-    overflow: hidden;
-    height:100%;
 
-}

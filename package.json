@@ -27,6 +27,7 @@
 		"particlesjs": "^2.2.2",
 		"preact": "^8.2.7",
 		"preact-async-route": "^2.1.1",
+		"preact-motion": "^1.1.0",
 		"preact-router": "^2.6.0",
 		"prop-types": "^15.6.1"
 	},

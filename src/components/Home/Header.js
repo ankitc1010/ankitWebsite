@@ -9,33 +9,7 @@ class Header extends Component {
       connectParticles: true,
       color: ["#b0b0ff"],
       sizeVariations: 7,
-      maxParticles: 200,
-      responsive: [
-        {
-          breakpoint: 768,
-          options: {
-            maxParticles: 100,
-            connectParticles: true
-          }
-        },
-        {
-          breakpoint: 425,
-          options: {
-            maxParticles: 50,
-            connectParticles: true,
-            speed: 5
-          }
-        },
-        {
-          breakpoint: 320,
-          options: {
-            maxParticles: 50,
-            speed: 5
-
-            // disables particles.js
-          }
-        }
-      ]
+      maxParticles: 5
     })
   }
   render() {

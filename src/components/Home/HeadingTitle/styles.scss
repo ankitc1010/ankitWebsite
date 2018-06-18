@@ -1,6 +1,6 @@
 @import "../variables";
 
-$rotateZ: 18deg;
+ $rotateZ: 10deg;
 
 @keyframes contentdown {
     to {transform: perspective($perspective) rotateX($rotateX) rotateY($rotateY) rotate($rotateZ) translateZ(20px);}
@@ -27,7 +27,7 @@ $rotateZ: 18deg;
     grid-column: 1 / span 9;
     grid-row: 1 / span 1;
     border-radius: 30px;
-    padding: 20px;
+    padding: 11px 23px;
     transform: perspective($perspective) rotateX($rotateX) rotateY($rotateY) rotate($rotateZ);
     animation-duration: 3.2s;
     animation-iteration-count: infinite;
@@ -41,6 +41,11 @@ h3 {
     padding: 0;
     margin: 0;
 
+}
+
+h4 {
+    padding: 0;
+    margin: 0;
 }
 
 .content {

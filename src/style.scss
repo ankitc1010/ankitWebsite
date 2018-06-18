@@ -44,4 +44,5 @@
 body {
 	@include responsive-font-size(1.3em, 3em, 320px, 1200px, 0.3em);
 	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden !important;
 }

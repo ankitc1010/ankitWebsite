@@ -1,0 +1,73 @@
+@import "../variables";
+
+$rotateZ: 18deg;
+
+.list__grid__container {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(50px, 1fr));
+    grid-template-rows: repeat(6, minmax(50px, 1fr));
+    grid-gap: 20px;
+    grid-auto-flow: row;
+    overflow-x: scroll;
+    overflow-y: visible;
+     padding-top: 40px;
+     padding-bottom: 40px;
+     overflow-y: hidden;
+    // padding-right: 120px;
+    // transform: rotate($rotateZ);
+}
+
+.list__grid__block {
+    grid-column:  span 2;
+    grid-row: span 2;
+    transform: perspective($perspective) rotateX($rotateX) rotateY($rotateY) rotateZ($rotateZ);
+
+}
+
+.list__grid__stack {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
+    padding:5px;
+    -webkit-box-shadow: 3px 4px 15px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 4px 15px -3px rgba(0,0,0,0.75);
+    box-shadow: 3px 4px 15px -3px rgba(0,0,0,0.75);
+}
+
+.below {
+    transform: perspective($perspective) rotateX($rotateX) rotateY($rotateY) translateZ(-50px);
+    background: grey;
+}
+
+.medium {
+    transform: perspective($perspective) rotateX($rotateX) rotateY($rotateY) translateZ(-20px);
+    background: #fd8a9e;
+
+}
+
+.list__content {
+    transform: perspective($perspective) rotateX($rotateX) rotateY($rotateY) translateZ(-10px);
+    // order:1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    backface-visibility: hidden !important;
+
+    font-size: 23px;
+    line-height: 29px;
+    background: radial-gradient(white, #eaeaea) ;
+}
+
+.list__content img {
+    height: 70%;
+}
+
+.particlesjs {
+    position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+    transform: perspective($perspective) rotateX($rotateX) rotateY($rotateY) rotateZ($rotateZ);
+}

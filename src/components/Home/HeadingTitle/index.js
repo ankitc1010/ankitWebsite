@@ -8,7 +8,7 @@ class HeadingTitle extends Component {
         <div class="heading__title__block darkblue" />
         <div class="heading__title__block blue" />
         <div class="heading__title__block content">
-          <h3>Level 1 : The Stack</h3>
+          <h4>{this.props.children}</h4>
         </div>
       </div>
     )
