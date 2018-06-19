@@ -17,7 +17,7 @@ import trekking from "./img/level3/trekking.png"
 
 export default ({ padding, row }) => (
   <div style={{ paddingTop: padding ? "100px" : 0 }}>
-    <HeadingTitle>Level 3 : Hobbies</HeadingTitle>
+    <HeadingTitle>Level 3 : Things I like to do.</HeadingTitle>
     <ListItemContainer row={row}>
       <ListItemBlock>
         <ListItemImage>{react}</ListItemImage>

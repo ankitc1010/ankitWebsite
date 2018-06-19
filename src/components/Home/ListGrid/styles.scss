@@ -59,8 +59,19 @@ $rotateZ: 18deg;
     background: radial-gradient(white, #eaeaea) ;
 }
 
+.list__content a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: inherit;
+}
 .list__content img {
     height: 70%;
+}
+
+.list__content a{
+    text-decoration: none;
+    color: black;
 }
 
 .particlesjs {
@@ -68,6 +79,6 @@ $rotateZ: 18deg;
   display: block;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: -1;
     transform: perspective($perspective) rotateX($rotateX) rotateY($rotateY) rotateZ($rotateZ);
 }

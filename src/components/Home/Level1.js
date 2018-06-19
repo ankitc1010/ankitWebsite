@@ -9,7 +9,9 @@ import {
 } from "./ListGrid/"
 
 import react from "./img/level1/react.png"
-import android from "./img/level1/android.png"
+import preact from "./img/level1/preact.png"
+
+import sails from "./img/level1/sails.png"
 import angular from "./img/level1/angular.svg"
 import css from "./img/level1/css.png"
 import java from "./img/level1/java.png"
@@ -23,7 +25,7 @@ import webpack from "./img/level1/webpack.svg"
 
 export default () => (
   <div>
-    <HeadingTitle>Level 1 : My Stack</HeadingTitle>
+    <HeadingTitle>Level 1 : Me, myself and my tech stack.</HeadingTitle>
     <ListItemContainer>
       <ListItemBlock>
         <ListItemImage>{react}</ListItemImage>
@@ -41,10 +43,13 @@ export default () => (
         <ListItemImage>{css}</ListItemImage>
         <ListItemText>CSS</ListItemText>
       </ListItemBlock>
-      <ParticlesPortion />
       <ListItemBlock>
-        <ListItemImage>{android}</ListItemImage>
-        <ListItemText>Android</ListItemText>
+        <ListItemImage>{preact}</ListItemImage>
+        <ListItemText>Preact.js</ListItemText>
+      </ListItemBlock>
+      <ListItemBlock>
+        <ListItemImage>{sails}</ListItemImage>
+        <ListItemText>Sails.js</ListItemText>
       </ListItemBlock>
       <ListItemBlock>
         <ListItemImage>{sass}</ListItemImage>

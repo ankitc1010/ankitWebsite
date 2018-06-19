@@ -1,9 +1,8 @@
-import { h, Component } from "preact"
+import { h, Component } from "preact";
 import { Motion, spring } from "preact-motion"
-
-
 import "./styles.scss"
 
+const ListItemLink = ({children, link}) => <a href={link}>{children}</a>
 const ListItemImage = ({ children }) => <img src={children} />
 const ListItemText = ({ children, small }) => <span style={{fontSize: small ? '15px' : 'inherit', lineHeight: small ? '17px' : 'inherit', textAlign: 'center'}}>{children}</span>
 class ParticlesPortion extends Component {
@@ -74,5 +73,6 @@ export {
   ListItemContainer,
   ParticlesPortion,
   ListItemText,
+  ListItemLink,
   ListItemBlock
 }

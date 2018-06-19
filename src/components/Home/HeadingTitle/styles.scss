@@ -17,11 +17,11 @@
 }
 .heading__title_container {
     width: 100%;
- height: 30vh;
+
     display: grid;
+    margin-bottom: 25px;
     // overflow: hidden;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, minmax(70px, 1fr))
 }
 .heading__title__block {
     grid-column: 1 / span 9;
@@ -51,6 +51,8 @@ h4 {
 .content {
     background: #70f7bb;
     animation-name: contentdown;
+    display: flex;
+    align-items: center;
 }
 
 .ultradarkblue {
