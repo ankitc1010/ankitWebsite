@@ -1,10 +1,20 @@
-import { h, Component } from "preact";
+import { h, Component } from "preact"
 import { Motion, spring } from "preact-motion"
 import "./styles.scss"
 
-const ListItemLink = ({children, link}) => <a href={link}>{children}</a>
+const ListItemLink = ({ children, link }) => <a href={link}>{children}</a>
 const ListItemImage = ({ children }) => <img src={children} />
-const ListItemText = ({ children, small }) => <span style={{fontSize: small ? '15px' : 'inherit', lineHeight: small ? '17px' : 'inherit', textAlign: 'center'}}>{children}</span>
+const ListItemText = ({ children, small }) => (
+  <span
+    style={{
+      fontSize: small ? "15px" : "inherit",
+      lineHeight: small ? "17px" : "inherit",
+      textAlign: "center"
+    }}
+  >
+    {children}
+  </span>
+)
 class ParticlesPortion extends Component {
   render() {
     return (
@@ -51,8 +61,6 @@ class ListItemBlock extends Component {
               onMouseOver={this.onClick}
               onClick={this.onClick}
             >
-              <div class="list__grid__stack below" />
-              <div class="list__grid__stack medium" />
               <div class="list__grid__stack list__content">{children}</div>
             </div>
           )}
@@ -61,12 +69,20 @@ class ListItemBlock extends Component {
     )
   }
 }
-const ListItemContainer = (props) => {
-    console.log("row",props.row)
-return(
-  <div class="list__grid__container" style={{gridTemplateRows: props.row ? `repeat(2, minmax(50px, 1fr))`: `repeat(6, minmax(50px, 1fr))`}}>{props.children}</div>
-)
-
+const ListItemContainer = props => {
+  console.log("row", props.row)
+  return (
+    <div
+      class="list__grid__container"
+      style={{
+        gridTemplateRows: props.row
+          ? `repeat(2, minmax(50px, 1fr))`
+          : `repeat(6, minmax(50px, 1fr))`
+      }}
+    >
+      {props.children}
+    </div>
+  )
 }
 export {
   ListItemImage,
