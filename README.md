@@ -1,5 +1,5 @@
 <h1 align='center'>
-![Logo of the project](./sitelogo.png)<br>
+<img src='./sitelogo.png' /><br>
 Ankit Personal Website
 </h1>
 
