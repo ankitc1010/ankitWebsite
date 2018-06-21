@@ -21,7 +21,7 @@ self.__precacheManifest = [
     "url": "icons/ios/icon_180x180.3b72ce2fb98e96b54465210e64f91b75.png"
   },
   {
-    "revision": "bb0fcbba2d97aa326ca7d4e87af1280a",
+    "revision": "5b3ed6c4d4bcf2071701cf8263c7f9f3",
     "url": "index.html"
   },
   {
